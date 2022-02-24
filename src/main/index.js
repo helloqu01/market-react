@@ -9,7 +9,8 @@ function MainPage() {
 
     React.useEffect(
         function(){
-            axios.get('https://7d7b6283-b746-44a0-812b-9588e5e38002.mock.pstmn.io/products').then(function(result){
+            // axios.get('https://7d7b6283-b746-44a0-812b-9588e5e38002.mock.pstmn.io/products').then(function(result){
+            axios.get('http://localhost:8008/products').then(function(result){
                 console.log("통신결과:" , result);
                 const products=result.data.products;
                 setproduct(products);//프로덕트 업데이트
@@ -26,7 +27,7 @@ function MainPage() {
     <div>
        
             <div id="banner">
-                <img src="./images/images/banners/banner1.png" alt=""/>
+                <img src="images/banners/banner1.png" alt=""/>
             </div>
             <h1>판매되는 상품들</h1>
             <div id="product-list">
@@ -42,7 +43,7 @@ function MainPage() {
                                             <span className='product-name'>{product.name}</span>
                                             <span className='product-price'>{product.price}원</span>
                                             <div className='product-seller'>
-                                                <img className='product-avatar' src="./images/images/icons/avatar.png"/>
+                                                <img className='product-avatar' src="/images/icons/avatar.png"/>
                                                 <span>{product.seller}</span>
                                             </div>
 
