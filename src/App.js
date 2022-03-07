@@ -17,7 +17,7 @@ function App() {
         <div id="header">
           <div id="header-area">
             <Link to={"/"}>
-            <img src="images/icons/logo.png" alt=""/>
+            <img src="./images/icons/logo.png" alt=""/>
             </Link>
             <Button size='large' onClick={function(){
               // alert('업로드클릭')

@@ -37,5 +37,22 @@
     background-color: rgb(30, 120, 255);
     color: white;
     border: none;
-    margin-top: 16px;
+  
+}
+
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-date{
+    font-size: 12px;
+    color: rgb(136,136,136);
+}
+.upload-img-placeholder{
+    width: 200px;
+    height: 200px;
+    margin-left: 12px;
+    object-fit: contain;
 }
